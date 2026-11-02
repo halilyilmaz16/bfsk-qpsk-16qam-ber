@@ -1,0 +1,22 @@
+# MATLAB
+*.asv
+*.m~
+*.autosave
+*.slxc
+*.mex*
+slprj/
+sccprj/
+codegen/
+*.mlappinstall
+*.mltbx
+helpsearch*/
+resources/project/*.xml.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large SDR captures (keep small samples only)
+results/captures/*.bin
+results/captures/*.dat
