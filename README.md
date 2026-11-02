@@ -22,3 +22,5 @@ We implement BFSK, QPSK and 16-QAM modulators/demodulators in MATLAB, simulate b
 ## Team
 
 - Halil Yilmaz
+- Emir Dündar
+- Atlas Ferhan
