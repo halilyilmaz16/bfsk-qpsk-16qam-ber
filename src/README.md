@@ -1,5 +1,9 @@
 # src
 
+## 16-QAM real-carrier experiment
+
+`qam16_experiment.m` uses the existing `qam16_mod`/`qam16_demod` functions to generate a real cos/−sin waveform, add AWGN and decode it with two correlators. `test_qam16` checks the mapping, energy, noise variance, theoretical BER and invariance to sampling rate. `run_qam16_analysis` generates 0:2:14 dB results as CSV/MAT/PNG files under `../results/qam16/`. From the project root, `start_qam16` opens the interactive GUI. For its self-contained English version, open [`../teslim/qam16_standalone.m`](../teslim/qam16_standalone.m) in MATLAB and click **Run**, or enter `qam16_standalone` with `teslim/` as the Current Folder. See the [English PDF summary and figures](../teslim/16QAM_Summary_and_Figures.pdf).
+
 MATLAB core functions (WP2 mod/demod + WP3 AWGN BER). Written from first principles: no Communications Toolbox functions are needed to run them (the toolbox is only used, if present, to cross-check the theory in `test_mod_demod.m`).
 
 | File | What it does |
@@ -41,5 +45,5 @@ Eb/N0 needed for BER = 10⁻³ (theory, matches simulation):
 |---|---|---|
 | QPSK | 6.8 dB | 2 |
 | BFSK coherent | 9.8 dB | 1 |
-| 16-QAM | 10.6 dB | 4 |
+| 16-QAM | 10.5224 dB (exact inversion) | 4 |
 | BFSK noncoherent | 11.0 dB | 1 |

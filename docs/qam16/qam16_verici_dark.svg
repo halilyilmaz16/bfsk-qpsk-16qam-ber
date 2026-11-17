@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="470" viewBox="0 0 680 470" role="img" font-family="Helvetica, Arial, sans-serif">
-<title>16-QAM vericisi</title><desc>16-QAM vericisi</desc>
+<title>16-QAM transmitter</title><desc>16-QAM transmitter</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#D3D1C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect x="0" y="0" width="680" height="470" fill="#0d1117" rx="10"/>
 <rect x="30" y="172" width="80" height="56" rx="8" fill="#444441" stroke="#B4B2A9" stroke-width="0.8"/>
 <text x="70.0" y="190.0" font-size="14" font-weight="500" fill="#D3D1C7" text-anchor="middle" dominant-baseline="central">b[n]</text>
-<text x="70.0" y="210.0" font-size="12" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">bitler</text>
+<text x="70.0" y="210.0" font-size="12" font-weight="400" fill="#B4B2A9" text-anchor="middle" dominant-baseline="central">bits</text>
 <path d="M110 200 L128 200" fill="none" stroke="#D3D1C7" stroke-width="1.2" marker-end="url(#arrow)"/>
 <rect x="130" y="172" width="84" height="56" rx="8" fill="#444441" stroke="#B4B2A9" stroke-width="0.8"/>
 <text x="172.0" y="190.0" font-size="14" font-weight="500" fill="#D3D1C7" text-anchor="middle" dominant-baseline="central">S/P</text>
@@ -13,10 +13,10 @@
 <path d="M226 200 L226 290 L238 290" fill="none" stroke="#D3D1C7" stroke-width="1.2" marker-end="url(#arrow)"/>
 <rect x="240" y="82" width="170" height="56" rx="8" fill="#3C3489" stroke="#AFA9EC" stroke-width="0.8"/>
 <text x="325.0" y="100.0" font-size="14" font-weight="500" fill="#CECBF6" text-anchor="middle" dominant-baseline="central">aI = G(b₁b₂)/√10</text>
-<text x="325.0" y="120.0" font-size="12" font-weight="400" fill="#AFA9EC" text-anchor="middle" dominant-baseline="central">b₁b₂ → I seviyesi</text>
+<text x="325.0" y="120.0" font-size="12" font-weight="400" fill="#AFA9EC" text-anchor="middle" dominant-baseline="central">b₁b₂ → I level</text>
 <rect x="240" y="262" width="170" height="56" rx="8" fill="#3C3489" stroke="#AFA9EC" stroke-width="0.8"/>
 <text x="325.0" y="280.0" font-size="14" font-weight="500" fill="#CECBF6" text-anchor="middle" dominant-baseline="central">aQ = G(b₃b₄)/√10</text>
-<text x="325.0" y="300.0" font-size="12" font-weight="400" fill="#AFA9EC" text-anchor="middle" dominant-baseline="central">b₃b₄ → Q seviyesi</text>
+<text x="325.0" y="300.0" font-size="12" font-weight="400" fill="#AFA9EC" text-anchor="middle" dominant-baseline="central">b₃b₄ → Q level</text>
 <path d="M410 110 L432 110" fill="none" stroke="#D3D1C7" stroke-width="1.2" marker-end="url(#arrow)"/>
 <path d="M410 290 L432 290" fill="none" stroke="#D3D1C7" stroke-width="1.2" marker-end="url(#arrow)"/>
 <rect x="390" y="40" width="120" height="38" rx="8" fill="#085041" stroke="#5DCAA5" stroke-width="0.8"/>
@@ -38,9 +38,9 @@
 <path d="M548 200 L572 200" fill="none" stroke="#D3D1C7" stroke-width="1.2" marker-end="url(#arrow)"/>
 <rect x="574" y="172" width="92" height="56" rx="8" fill="#712B13" stroke="#F0997B" stroke-width="0.8"/>
 <text x="620.0" y="190.0" font-size="14" font-weight="500" fill="#F5C4B3" text-anchor="middle" dominant-baseline="central">s(t)</text>
-<text x="620.0" y="210.0" font-size="12" font-weight="400" fill="#F0997B" text-anchor="middle" dominant-baseline="central">→ kanal</text>
+<text x="620.0" y="210.0" font-size="12" font-weight="400" fill="#F0997B" text-anchor="middle" dominant-baseline="central">→ channel</text>
 <text x="30" y="392" font-size="13" font-weight="400" fill="#D3D1C7" text-anchor="start" dominant-baseline="central">s(t) = aI·cos(2πfct) − aQ·sin(2πfct),   0 ≤ t &lt; Ts = 4Tb</text>
 <text x="30" y="414" font-size="13" font-weight="400" fill="#B4B2A9" text-anchor="start" dominant-baseline="central">G (Gray 4-PAM):  00 → −3,  01 → −1,  11 → +1,  10 → +3</text>
-<text x="30" y="436" font-size="13" font-weight="400" fill="#B4B2A9" text-anchor="start" dominant-baseline="central">Ham ortalama enerji 5 + 5 = 10 → ÷√10 → Es = 1, Eb = Es/4</text>
-<text x="30" y="458" font-size="13" font-weight="400" fill="#B4B2A9" text-anchor="start" dominant-baseline="central">Örnek: 1011 → (3 + j)/√10.   Kodda (temel bant): s = aI + j·aQ  (qam16_mod)</text>
+<text x="30" y="436" font-size="13" font-weight="400" fill="#B4B2A9" text-anchor="start" dominant-baseline="central">Raw mean energy 5 + 5 = 10 → ÷√10 → Es = 1, Eb = Es/4</text>
+<text x="30" y="458" font-size="13" font-weight="400" fill="#B4B2A9" text-anchor="start" dominant-baseline="central">Example: 1011 → (3 + j)/√10.  Baseband code: s = aI + j·aQ  (qam16_mod)</text>
 </svg>

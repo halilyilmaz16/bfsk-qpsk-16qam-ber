@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="470" viewBox="0 0 680 470" role="img" font-family="Helvetica, Arial, sans-serif">
-<title>16-QAM alıcısı</title><desc>16-QAM alıcısı</desc>
+<title>16-QAM receiver</title><desc>16-QAM receiver</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#444441" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect x="0" y="0" width="680" height="470" fill="#ffffff" rx="10"/>
 <rect x="30" y="172" width="80" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.8"/>
@@ -21,19 +21,19 @@
 <path d="M186 290 L208 290" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
 <rect x="210" y="82" width="190" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
 <text x="305.0" y="100.0" font-size="14" font-weight="500" fill="#3C3489" text-anchor="middle" dominant-baseline="central">(2/Ts)∫₀ᵀˢ r·cos dt</text>
-<text x="305.0" y="120.0" font-size="12" font-weight="400" fill="#534AB7" text-anchor="middle" dominant-baseline="central">kodda: real(r)</text>
+<text x="305.0" y="120.0" font-size="12" font-weight="400" fill="#534AB7" text-anchor="middle" dominant-baseline="central">code: real(r)</text>
 <rect x="210" y="262" width="190" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
 <text x="305.0" y="280.0" font-size="14" font-weight="500" fill="#3C3489" text-anchor="middle" dominant-baseline="central">(2/Ts)∫₀ᵀˢ r·(−sin) dt</text>
-<text x="305.0" y="300.0" font-size="12" font-weight="400" fill="#534AB7" text-anchor="middle" dominant-baseline="central">kodda: imag(r)</text>
+<text x="305.0" y="300.0" font-size="12" font-weight="400" fill="#534AB7" text-anchor="middle" dominant-baseline="central">code: imag(r)</text>
 <path d="M400 110 L438 110" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
 <text x="419" y="98" font-size="13" font-weight="500" fill="#444441" text-anchor="middle" dominant-baseline="central">zI</text>
 <rect x="440" y="82" width="150" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
-<text x="515.0" y="100.0" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle" dominant-baseline="central">4-PAM dilim</text>
+<text x="515.0" y="100.0" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle" dominant-baseline="central">4-PAM slicer</text>
 <text x="515.0" y="120.0" font-size="12" font-weight="400" fill="#993C1D" text-anchor="middle" dominant-baseline="central">x = √10·zI → b₁b₂</text>
 <path d="M400 290 L438 290" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
 <text x="419" y="278" font-size="13" font-weight="500" fill="#444441" text-anchor="middle" dominant-baseline="central">zQ</text>
 <rect x="440" y="262" width="150" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
-<text x="515.0" y="280.0" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle" dominant-baseline="central">4-PAM dilim</text>
+<text x="515.0" y="280.0" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle" dominant-baseline="central">4-PAM slicer</text>
 <text x="515.0" y="300.0" font-size="12" font-weight="400" fill="#993C1D" text-anchor="middle" dominant-baseline="central">x = √10·zQ → b₃b₄</text>
 <path d="M590 110 L600 110 L600 186 L610 186" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
 <path d="M590 290 L600 290 L600 214 L610 214" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
@@ -42,7 +42,7 @@
 <path d="M639 228 L639 252" fill="none" stroke="#444441" stroke-width="1.2" marker-end="url(#arrow)"/>
 <text x="639" y="266" font-size="13" font-weight="500" fill="#444441" text-anchor="middle" dominant-baseline="central">bits_hat</text>
 <text x="30" y="392" font-size="13" font-weight="400" fill="#444441" text-anchor="start" dominant-baseline="central">zI = aI + nI,   zQ = aQ + nQ,   √10·aI, √10·aQ ∈ {−3, −1, +1, +3}</text>
-<text x="30" y="414" font-size="13" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">Eşikler −2, 0, +2:   1. bit = (x &gt; 0),   2. bit = (|x| &lt; 2)   kodda: pam4_slice</text>
-<text x="30" y="436" font-size="13" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">Her eksende en yakın seviye = ML karar (AWGN, eşit olasılıklı semboller)</text>
+<text x="30" y="414" font-size="13" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">Cuts −2, 0, +2:  1st bit = (x &gt; 0),  2nd bit = (|x| &lt; 2)  code: pam4_slice</text>
+<text x="30" y="436" font-size="13" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">Nearest level on each axis = ML decision (AWGN, equiprobable symbols)</text>
 <text x="30" y="458" font-size="13" font-weight="400" fill="#5F5E5A" text-anchor="start" dominant-baseline="central">Pb = ¼·[3Q(u) + 2Q(3u) − Q(5u)],   u = √(4Eb/5N0)</text>
 </svg>
